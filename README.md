@@ -11,4 +11,5 @@ The Algorithm first calibrates the scanned picture, finding all four corners of 
 
 Once the read section is located, the program goes through an algorithm designed to identify all of the cells to be read. It does this by identifying all contours and then sorting the contours by position on the image. 
 
-![Alt text](relative%20path/to/img.jpg?raw=true "Box Detection")
+![Alt text](relative%20path/to/img.jpg?raw=true "FormReader
+/Box Detection.png")

@@ -13,7 +13,11 @@ Once the read section is located, the program goes through an algorithm designed
 
 <img width="1138" alt="Box Detection" src="https://github.com/mklimek25/FormReader/assets/90988711/fe83fb9e-4edb-457b-af60-b760b9746008">
 
- Once the boxes are detected, they are analyzed for contours. These contours are each reconfigured to fit the MNIST training set and are read using a trained model developed using the MNIST training set. The results for each contour in each box are then they are combined to output the cell values.
+ Once the boxes are detected, they are analyzed for contours. These contours are each reconfigured to fit the MNIST training set and are read using a trained model developed using the MNIST training set. Contours (identified numbers) are separated out from the remainder of the numbers and reconfigured to match the model input which is trained using the MNIST Dataset. The main adjustment needed is an adjustment to image size which is performed by an algorithm that I designed to get the clearest image of the contour and adjusting the size of that image to fit the MNIST input data. This results in an input image shown in the example below:
+
+ <img width="661" alt="Screenshot 2023-10-08 at 1 43 29 PM" src="https://github.com/mklimek25/FormReader/assets/90988711/61850de5-4b15-4f6c-97e6-79a9b04f896f">
+ 
+ The results for each contour in each box are then they are combined to output the cell values.
 
  
 

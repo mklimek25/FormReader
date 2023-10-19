@@ -9,7 +9,12 @@ The Algorithm first calibrates the scanned picture, finding all four corners of 
 1. Manually scanned images will never be perfectly straight,
 2. The program needs to calibrate in order to identify the form cells properly
 
-Once the read section is located, the program goes through an algorithm designed to identify all of the cells to be read. It does this by identifying all contours and then sorting the contours by position on the image. 
+Once the read section is located, the program goes through an algorithm designed to identify all of the cells to be read. It does this by identifying all contours and then sorting the contours by position on the image like what is found in the image below. 
 
 <img width="1138" alt="Box Detection" src="https://github.com/mklimek25/FormReader/assets/90988711/fe83fb9e-4edb-457b-af60-b760b9746008">
+
+ Once the boxes are detected, they are analyzed for contours. These contours are each reconfigured to fit the MNIST training set and are read using a trained model developed using the MNIST training set. The results for each contour in each box are then they are combined to output the cell values.
+
+ 
+
 

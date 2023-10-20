@@ -17,7 +17,11 @@ Once the read section is located, the program goes through an algorithm designed
 
  <img width="661" alt="Screenshot 2023-10-08 at 1 43 29 PM" src="https://github.com/mklimek25/FormReader/assets/90988711/61850de5-4b15-4f6c-97e6-79a9b04f896f">
  
- The results for each contour in each box are then they are combined to output the cell values.
+ These input integers will then be analyzed by the MNIST trained model developed in 'model_generator.py' that was trained and tested based on 60,000 images similar to the input integer displayed. The model will predict each individual contour and return the combination of the predicted values.
+
+ This prediction model performed at a 97% accuracy with digital data, which was impressive. When reading employee handwriting, the accuracy dropped considerably, which is not supprising as I could hardly read the handwriting myself. 
+
+ 
 
  
 
